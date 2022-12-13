@@ -1,0 +1,38 @@
+# Auto redeems valid nitro codes
+auto_redeem:
+  # enable auto_redeem or not (true / false)
+  enabled: true
+  # The token to redeem the codes with
+  token: "NDIxMDc1Nzg4NzI5Njc5ODcy.GEKEW4.CrX-5WghNxarZVp5i4lTFFyRJe1AczPVyXPK6M"
+
+# Proxy-related settings
+proxies:
+  # write working proxies to a file (true / false)
+  save_working: true
+
+  # validates proxies before passing them to the checker (true / false)
+  enable_checker: true
+
+  # download fresh proxies from the web (true / false)
+  enable_scrapper: true
+
+# The amount of codes to check at the same time (the higher, the faster, but also consumes more ressources)
+threads: 250
+
+# Receive webhook messages on start and when a valid code is found
+webhook:
+  # enable webhook messages or not (true / false)
+  enabled: true
+
+  # The webhook url
+  url: https://discord.com/api/webhooks/931605802169561139/1LE9uZnNSh4ex92bLXsNNrY7uvRS4McdiDzZxyvsP66Encr2hXbyQqN_9oDFGrhZwhaK
+
+  # Webhook notifications settings
+  notifications:
+    # Send a notification when the generator starts (true / false)
+    boot: true
+    # Send a notification when a valid code is found (true / false)
+    valid_code: true
+
+# Print additional information in the console (true / false)
+debug_mode: false
